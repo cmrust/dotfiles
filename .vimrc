@@ -1,5 +1,5 @@
 " vimrc file
-" Author:   Chris Rust
+" Author:       Chris Rust
 " Last Change:  20140503
 
 syntax on                              " syntax highlighting
