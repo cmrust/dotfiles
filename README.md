@@ -3,12 +3,12 @@ dotfiles
 
 .vimrc, .bashrc, .psqlrc, etc.
 
-I've decided to start sharing my env rc files, as many others do on GitHub. In the process of cleaning them up for presentation I have learned a lot more about how they work. Check em out and ask me anything!
+I've decided to share my env rc files. Cleaning them up has been a great excersize in learning how they work. Rather than publishing _copypasta_, I've been forcing myself to understand each line. It's also gotten me to go look up or derive fixes for things I've been bothered by for a while. So, enjoy!
 
 examples
 --------
 
-*** bashrc ***
+__bashrc__
 
 One of my favorite customizations so far, has been session independent bash history files:
 
@@ -19,12 +19,12 @@ The first command switches editing mode to 'append' for the history file. The se
 
 Test it out by opening 2 terminal tabs; alternating between them run: `echo one` `echo two` `echo three` `history 10`
 
-*** psqlrc ***
+__psqlrc__
 
 Another tweak, for the postgres client, is seperate history files per connection:
 
     \set HISTFILE ~/.psql_history- :HOST - :DBNAME
 
-This command produces files like:
+This command produces history files like:
 
     .psql_history-localhost-testdb
