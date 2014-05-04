@@ -1,12 +1,15 @@
---Alter psql_history
--- * create history files per connection, like:
---    .psql_history-localhost-testdb
-\set HISTFILE ~/.psql_history- :HOST - :DBNAME
--- * change filesize, default is 500
-\set HISTSIZE 2000
+-- psqlrc file
+-- Author:       Chris Rust
+-- Last Change:  20140503
 
---Print how long queries take
+-- print how long queries take
 \timing
 
---Greeting
-\echo '\nWelcome back, friend.\n'
+-- greeting
+\echo '\nWelcome back, registrar.\n'
+
+-- create history file per connection, such as:
+-- .psql_history-localhost-testdb
+\set HISTFILE ~/.psql_history- :HOST - :DBNAME
+-- change history filesize, default was 500
+\set HISTSIZE 2000
