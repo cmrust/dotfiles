@@ -3,14 +3,14 @@ dotfiles
 
 .vimrc, .bashrc, .psqlrc, etc.
 
-I've decided to share my env rc files. Cleaning them up has been a great excersize in learning how they work. Rather than publishing _copypasta_, I've been forcing myself to understand each line. It's also gotten me to go look up or derive fixes for things I've been bothered by for a while. So, enjoy!
+Uploading my configurations to keep them in sync between machines. The process of cleaning them up for presentation has proved a good excersize in learning how they work. Rather than publishing _copypasta_, I've been taking the time to understand and prune the commands as well as finally going and iterating on a single file to purge annoyances everywhere.
 
 examples
 --------
 
 __bashrc__
 
-One of my favorite customizations so far, has been session independent bash history files:
+One of my favorite customizations is setting up a single bash history file for all sessions:
 
 The first command switches editing mode to 'append' for the history file. The second command causes the history file to be written to and then the buffer to be cleared and reloaded upon each issue of a command.
 
