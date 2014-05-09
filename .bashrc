@@ -24,6 +24,12 @@ export HISTFILESIZE=""
 shopt -s histappend
 export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
 
+# for Bash >= 4.0
+if [ $(echo $BASH_VERSION | cut -d. -f1) -ge 4 ]; then
+    # change to directories w/o typing cd
+    shopt -s autocd
+fi
+
 # opens a SOCKS proxy to 🏠 on localhost:4444
 alias proxytnnl="ssh -p24747 -D4444 chris@tnnl.in"
 
