@@ -5,7 +5,7 @@
 # if not running interactively, break
 [[ $- != *i* ]] && return
 
-# command prompt is: [user@host cwd]$
+# RHEL command prompt is: [user@host cwd]$
 PS1='[\u@\h \W]\$ '
 
 # aliases
@@ -37,3 +37,6 @@ alias proxytnnl="ssh -p24747 -D4444 chris@tnnl.in"
 # hostname/ip lookup functions
 function ip2hostname () { nslookup "$1" | grep name | sed 's/.*name\ =\ \(.*\)./\1/'; }
 function hostname2ip () { nslookup "$1" | grep 'Address: [0-9]' | sed 's/Address: //'; }
+
+# import local settings (machine specific config)
+[ -f ~/.bash_local ] && . ~/.bash_local
