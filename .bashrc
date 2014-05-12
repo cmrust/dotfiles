@@ -1,6 +1,6 @@
 # bashrc file
 # Author:       Chris Rust
-# Last Change:  20140503
+# Last Change:  20140511
 
 # if not running interactively, break
 [[ $- != *i* ]] && return
@@ -9,6 +9,7 @@
 PS1='[\u@\h \W]\$ '
 
 # aliases
+alias ls="ls --color"
 alias ll="ls -l"
 alias la="ls -al"
 alias lt="ls -lt"
