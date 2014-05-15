@@ -1,6 +1,6 @@
 " vimrc file
 " Author:       Chris Rust
-" Last Change:  20140503
+" Last Change:  20140514
 
 syntax on                          " syntax highlighting
 filetype indent plugin on          " react w/indent to different filetypes
