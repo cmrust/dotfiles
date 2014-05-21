@@ -19,6 +19,10 @@ alias l="ls"
 export HISTSIZE=""
 export HISTFILESIZE=""
 
+# make sure system tools like `crontab` use vim
+export VISUAL=vim
+export EDITOR=vim
+
 # make history files session independent, by:
 # 1. changing setting to append to file, rather than overwrite
 # 2. each time running a command, {append,clear,reload}ing the shared history
