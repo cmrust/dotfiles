@@ -3,7 +3,7 @@ dotfiles
 
 .vimrc, .bashrc, .psqlrc, etc.
 
-Uploading my configurations to keep them in sync between machines. The process of cleaning them up for presentation has proved a good excersize in learning how they work. Rather than publishing _copypasta_, I've been taking the time to understand and prune the commands as well as finally going and iterating on a single file to purge annoyances everywhere.
+System configuration files. Uploading to keep in sync between machines.
 
 examples
 --------
