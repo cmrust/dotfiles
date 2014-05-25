@@ -1,6 +1,6 @@
 " vimrc file
 " Author:       Chris Rust
-" Last Change:  20140514
+" Last Change:  20140524
 
 syntax on                          " syntax highlighting
 filetype indent plugin on          " react w/indent to different filetypes
@@ -16,3 +16,6 @@ autocmd Filetype python setlocal ts=4 sts=4 sw=4
 " turns on persistent undo history
 set undofile
 set undodir=~/.vim/undo            " create req dir `mkdir -p ~/.vim/undo`
+
+" turns on highlighted search results
+set hlsearch
