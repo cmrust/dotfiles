@@ -47,3 +47,6 @@ function hostname2ip () { nslookup "$1" | grep 'Address: [0-9]' | sed 's/Address
 
 # import local settings (machine specific config)
 [ -f ~/.bash_local ] && . ~/.bash_local
+
+# include private bin in PATH if it exists
+[ -d "~/bin" ] && PATH="~/bin:$PATH"
