@@ -19,6 +19,9 @@ alias l="ls"
 export HISTSIZE=""
 export HISTFILESIZE=""
 
+# don't put duplicate lines or lines starting with space in the history
+export HISTCONTROL=ignoreboth
+
 # make sure system tools like `crontab` use vim
 export VISUAL=vim
 export EDITOR=vim
