@@ -1,6 +1,6 @@
 # bashrc file
 # Author:       Chris Rust
-# Last Change:  20140520
+# Last Change:  20140802
 
 # if not running interactively, break
 [[ $- != *i* ]] && return
