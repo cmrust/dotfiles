@@ -1,6 +1,6 @@
 # bashrc file
 # Author:       Chris Rust
-# Last Change:  20140802
+# Last Change:  20140813
 
 # if not running interactively, break
 [[ $- != *i* ]] && return
@@ -26,11 +26,9 @@ export HISTCONTROL=ignoreboth
 export VISUAL=vim
 export EDITOR=vim
 
-# make history files session independent, by:
-# 1. changing setting to append to file, rather than overwrite
-# 2. each time running a command, {append,clear,reload}ing the shared history
+# make all open sessions write to the same history file
 shopt -s histappend
-export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
+export PROMPT_COMMAND="history -a; $PROMPT_COMMAND"
 
 # for Bash >= 4.0
 if [ $(echo $BASH_VERSION | cut -d. -f1) -ge 4 ]; then
@@ -50,3 +48,6 @@ function hostname2ip () { nslookup "$1" | grep 'Address: [0-9]' | sed 's/Address
 
 # include private bin in PATH if it exists
 [ -d "~/bin" ] && PATH="~/bin:$PATH"
+
+# if it doesn't exist, create undo storage for vim
+[ ! -d ~/.vim/undo ] && mkdir -p ~/.vim/undo
