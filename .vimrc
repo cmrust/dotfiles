@@ -1,6 +1,6 @@
 " vimrc file
 " Author:       Chris Rust
-" Last Change:  20140813
+" Last Change:  20141013
 
 syntax on                          " syntax highlighting
 filetype indent plugin on          " react w/indent to different filetypes
@@ -20,6 +20,9 @@ set undodir=~/.vim/undo            " create req dir `mkdir -p ~/.vim/undo`
 
 " turns on highlighted search results
 set hlsearch
+
+" override for *.md files to recognize as Markdown rather than Modula 2 source
+autocmd BufRead,BufNew *.md set filetype=markdown
 
 " turns on numbered lines
 set number
