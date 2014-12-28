@@ -25,4 +25,4 @@ set hlsearch
 autocmd BufRead,BufNew *.md set filetype=markdown
 
 " turns on numbered lines
-set number
+" set number
