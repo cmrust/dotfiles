@@ -1,6 +1,6 @@
 " vimrc file
 " Author:       Chris Rust
-" Last Change:  20171007
+" Last Change:  20190218
 
 " --------
 "  Vundle
