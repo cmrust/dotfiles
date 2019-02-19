@@ -1,6 +1,6 @@
 " vimrc file
 " Author:       Chris Rust
-" Last Change:  20190218
+" Last Change:  20190219
 
 " --------
 "  Vundle
@@ -54,6 +54,8 @@ autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 autocmd Filetype html setlocal ts=2 sts=2 sw=2
 autocmd Filetype javascript setlocal ts=2 sts=2 sw=2
 autocmd Filetype python setlocal ts=4 sts=4 sw=4
+autocmd Filetype bash setlocal ts=4 sts=4 sw=4
+autocmd Filetype sh setlocal ts=4 sts=4 sw=4
 set expandtab " always expand tabs into spaces
 
 " gofmt tabbing
