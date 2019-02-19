@@ -43,9 +43,6 @@ COMPLETION_WAITING_DOTS="true"
 setopt inc_append_history
 # retrieve the updated history file everytime history is called
 setopt share_history
-# keeps ~/.zsh_history file unbounded
-export HISTSIZE=""
-export SAVEHIST=""
 
 # make sure system tools use vim
 export VISUAL=vim
