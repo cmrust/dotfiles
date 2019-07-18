@@ -81,5 +81,8 @@ set backspace=indent,eol,start
 
 set background=dark
 
+" disable (noop) F1 - help key
+nmap <F1> <nop>
+
 " turn on groovy highlighting for Jenkinsfile's
 au BufNewFile,BufRead Jenkinsfile setf groovy
