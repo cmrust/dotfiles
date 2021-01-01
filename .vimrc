@@ -17,11 +17,10 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 " add plugins here
-Plugin 'sheerun/vim-polyglot'
+Plugin 'vim-syntastic/syntastic'
+Plugin 'davidhalter/jedi-vim'    " python
 Plugin 'fatih/vim-go'
-Plugin 'bash-support.vim'
-Plugin 'ervandew/supertab'
-Plugin 'morhetz/gruvbox'
+Plugin 'morhetz/gruvbox'         " theme
 Plugin 'airblade/vim-gitgutter'
 Plugin 'vim-airline/vim-airline'
 
@@ -53,9 +52,8 @@ autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 " manage tab formatting
 autocmd Filetype html setlocal ts=2 sts=2 sw=2
 autocmd Filetype javascript setlocal ts=2 sts=2 sw=2
-autocmd Filetype python setlocal ts=4 sts=4 sw=4
-autocmd Filetype bash setlocal ts=4 sts=4 sw=4
-autocmd Filetype sh setlocal ts=4 sts=4 sw=4
+autocmd Filetype bash setlocal ts=2 sts=2 sw=2
+autocmd Filetype sh setlocal ts=2 sts=2 sw=2
 set expandtab " always expand tabs into spaces
 
 " gofmt tabbing
@@ -81,8 +79,8 @@ set backspace=indent,eol,start
 
 set background=dark
 
-" disable (noop) F1 - help key
+" disable (noop) F1 - help key - kept accidentally hitting it on my keyboard
 nmap <F1> <nop>
 
-" turn on groovy highlighting for Jenkinsfile's
+" turn on groovy highlighting for Jenkinsfile type
 au BufNewFile,BufRead Jenkinsfile setf groovy

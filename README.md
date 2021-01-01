@@ -1,6 +1,7 @@
 dotfiles
 ========
 
-.vimrc, .bashrc, .psqlrc, etc.
+User shell config files. Here to be available from anywhere.
 
-System configuration files. Uploaded to keep in-sync between machines.
+.zshrc, .vimrc, install scripts
+
