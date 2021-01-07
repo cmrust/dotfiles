@@ -6,7 +6,7 @@
 # =====================================
 
 # https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="agnoster"
+ZSH_THEME="robbyrussell"
 
 # plugins can be found in ~/.oh-my-zsh/plugins/*
 # custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
