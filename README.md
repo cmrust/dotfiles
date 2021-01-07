@@ -20,6 +20,4 @@ brew install ${brew_packages[@]}
 # install oh my zsh
 
 # install dotfiles
-
-./install.sh
 ```
