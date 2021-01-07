@@ -12,7 +12,7 @@ xcode-select --install     # installs command line developer tools - necessary t
 
 # install homebrew
 
-# even though many of these tools ship with the OS, installing them through brew gets us on an upgrade path
+# even though many of these tools ship with the OS, installing them through brew to get on an upgrade path
 
 brew_packages=(zsh vim git bash gnu-sed curl jq yq cfssl meld unrar gimp)
 brew install ${brew_packages[@]}
