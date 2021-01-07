@@ -9,7 +9,7 @@ log_banner () {
 log_banner "Loading dotfiles from github.com/cmrust"
 
 echo "creating temporary directory: $TMP_DIR"
-TMP_DIR="$(mktemp)"
+TMP_DIR="$(mktemp -d)"
 cd "$TMP_DIR"
 git clone https://github.com/cmrust/dotfiles.git
 

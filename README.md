@@ -5,7 +5,9 @@ User shell config files. Here to be available from anywhere.
 
 .zshrc, .vimrc, install scripts
 
-### macOS system setup
+### System Setup
+
+macOS:
 
 ```
 xcode-select --install     # installs command line developer tools - necessary to install brew
@@ -13,11 +15,13 @@ xcode-select --install     # installs command line developer tools - necessary t
 # install homebrew
 
 # even though many of these tools ship with the OS, installing them through brew gets us on an upgrade path
+
 brew_packages=(zsh vim git bash gnu-sed curl jq yq cfssl meld unrar gimp)
 brew install ${brew_packages[@]}
 
 # install oh my zsh
 
 # install dotfiles
+
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/cmrust/dotfiles/master/install.sh)"
 ```
