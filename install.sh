@@ -1,13 +1,4 @@
-# macos, initial setup:
-
-xcode-select --install     # installs command line developer tools - necessary to brew install vim
-
-# even though macos ships many of these tools, installing them through brew to get them on an upgrade path
-brew_packages=(zsh vim git bash gnu-sed curl jq yq cfssl meld)
-
-brew install ${brew_packages[@]}
-
-sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+#!/bin/bash
 
 log_banner () {
   echo "================================================"
@@ -16,16 +7,19 @@ log_banner () {
 }
 
 log_banner "Loading dotfiles from github.com/cmrust"
-TMP_DIR="$(mktemp)"
+
 echo "creating temporary directory: $TMP_DIR"
+TMP_DIR="$(mktemp)"
 cd "$TMP_DIR"
 git clone https://github.com/cmrust/dotfiles.git
 
 sync () {
-  log_banner "Loading ${1}"
+  # Check if file exists in both locations
+  # if it does print diff, replace and create a backup
+  log_banner "Installing ${1}"
   if [ -f "dotfiles/${1}" ]; then
     if [ -f "~/${1}" ]; then
-      output=${diff "dotfiles/${1}" "~/${1}"}
+      output=$(diff "dotfiles/${1}" "~/${1}")
       if [ -z "$output" ]; then
         echo "${1} already in place"
       else
@@ -51,4 +45,3 @@ sync '.vimrc'
 
 cd -
 rm -rf "${TMP_DIR}/dotfiles"
-
