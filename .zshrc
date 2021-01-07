@@ -17,8 +17,8 @@ plugins=(
 )
 
 # TODO: can the username be loaded dynamically?
-# export ZSH=/Users/$USER/.oh-my-zsh
-export ZSH=/Users/christopher.rust/.oh-my-zsh
+export ZSH=/Users/$USER/.oh-my-zsh
+# export ZSH=/Users/christopher.rust/.oh-my-zsh
 source $ZSH/oh-my-zsh.sh
 
 # =====================================
