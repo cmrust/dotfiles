@@ -16,9 +16,7 @@ plugins=(
   kubectl
 )
 
-# TODO: can the username be loaded dynamically?
-export ZSH=/Users/$USER/.oh-my-zsh
-# export ZSH=/Users/christopher.rust/.oh-my-zsh
+export ZSH="/Users/cmrust/.oh-my-zsh"
 source $ZSH/oh-my-zsh.sh
 
 # =====================================
@@ -27,22 +25,19 @@ source $ZSH/oh-my-zsh.sh
 # Path
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-# Aliases
-alias ls="ls -G" # enable colorized output
-alias ll="ls -l"
-alias la="ls -al"
-alias lt="ls -lt"
-alias l="ls"
-
 # Autocompletion settings
 # Disable case sensitivity.
 CASE_SENSITIVE="false"
 # Enable hyphen insensitivity: _ and - will be interchangeable.
 HYPHEN_INSENSITIVE="true"
-# Display dots whilst waiting for completion.
+# Display red dots whilst waiting for completion.
 COMPLETION_WAITING_DOTS="true"
+
 # Disable autocorrect suggestions.
-unsetopt correct_all
+# unsetopt correct_all
+## given this below maybe this above is no longer necessary to set
+# Uncomment the following line to enable command auto-correction.
+# ENABLE_CORRECTION="true"
 
 # Vim settings
 # Make sure system tools use vim.
@@ -56,4 +51,11 @@ HISTSIZE=1000000 # entries kept in memory
 SAVEHIST=1000000 # entries kept in file
 # The share_history option: always imports new commands from the history file (so multiple shells don't overwrite eachother), appends them upon run (as opposed to after exit, where killed hung commands can be lost), and enters beginning timestamp (epoch) and duration (in seconds) for each line.
 setopt share_history
+
+# Set personal aliases, overriding those provided by oh-my-zsh libs, plugins, and themes.
+alias ls="ls -G" # enable colorized output
+alias ll="ls -l"
+alias la="ls -al"
+alias lt="ls -lt"
+alias l="ls"
 
