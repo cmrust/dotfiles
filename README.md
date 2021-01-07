@@ -5,9 +5,7 @@ User shell config files. Here to be available from anywhere.
 
 .zshrc, .vimrc, install scripts
 
-### System Setup
-
-macOS:
+### macOS System Setup
 
 ```
 xcode-select --install     # installs command line developer tools - necessary to install brew
