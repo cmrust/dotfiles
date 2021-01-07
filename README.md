@@ -23,5 +23,5 @@ brew install ${brew_packages[@]}
 
 # install dotfiles
 
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/cmrust/dotfiles/master/install.sh)"
+./install.sh
 ```
