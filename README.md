@@ -14,7 +14,7 @@ xcode-select --install     # installs command line developer tools - necessary t
 
 # even though many of these tools ship with the OS, installing them through brew to get on an upgrade path
 
-brew_packages=(zsh vim git bash gnu-sed curl jq yq cfssl meld unrar gimp)
+brew_packages=(zsh vim git bash gnu-sed curl jq yq cfssl meld gimp)
 brew install ${brew_packages[@]}
 
 # install oh my zsh
