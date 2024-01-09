@@ -19,5 +19,10 @@ brew install ${brew_packages[@]}
 
 # install oh my zsh
 
+# install powerlevel10k into oh my zsh
+# on first launch it will ask to:
+# - install font, say yes
+# - choose style, choose lean
+
 # install dotfiles
 ```
