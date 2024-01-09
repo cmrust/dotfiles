@@ -6,14 +6,12 @@
 # =====================================
 
 # https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="robbyrussell"
+ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # plugins can be found in ~/.oh-my-zsh/plugins/*
 # custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  gitfast
-  kubectl
 )
 
 export ZSH="/Users/cmrust/.oh-my-zsh"
