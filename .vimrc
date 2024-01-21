@@ -1,6 +1,6 @@
 " vimrc file
 " Author:       Chris Rust
-" Last Change:  20190219
+" Last Change:  20240121
 
 " --------
 "  Vundle
@@ -17,13 +17,12 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 " add plugins here
-Plugin 'vim-syntastic/syntastic'
-Plugin 'davidhalter/jedi-vim'    " python
-Plugin 'fatih/vim-go'
-Plugin 'morhetz/gruvbox'         " theme
+Plugin 'dense-analysis/ale'      " automatic linting with wide language support
+Plugin 'morhetz/gruvbox'         " theme, plays nicely with gitgutter and airline
 Plugin 'airblade/vim-gitgutter'
 Plugin 'vim-airline/vim-airline'
 
+" All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
 " To ignore plugin indent changes, instead use:
@@ -37,6 +36,8 @@ filetype plugin indent on    " required
 "
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
+
+" Better color support for the theme:
 set termguicolors
 colorscheme gruvbox
 
